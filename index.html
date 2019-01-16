@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous">
+    <title>show hide</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <select id="mainsel" class="changeDivs" data-change-div="alldivs"> <!-- onchange="evtChange(this)" -->
+            <option disabled selected value> -- select an option -- </option>
+            <option value="1">USA</option>
+            <option value="2">Japan</option>
+            <option value="3">China</option>
+            <option value="4">Russia</option>
+            <option value="5">France</option>
+          </select>
+        </div>
+      </div>
+      <div id="alldivs">
+        <div id="firstrow" class="row">
+          <div id="frfc" class="col-md-3 alert-info">
+            1st row 1st col
+          </div>
+          <div id="frsc" class="col-md-3 alert-success">
+            1st row 2nd col
+          </div>
+          <div id="frtc" class="col-md-3 alert-warning">
+            1st row 3rd col
+          </div>
+        </div>
+        <div id="secondrow" class="row">
+          <div id="srfc" class="col-md-3 alert-success">
+            2nd row 1st col
+          </div>
+          <div id="srsc" class="col-md-3 alert-warning">
+            2nd row 2nd col
+          </div>
+          <div id="srtc" class="col-md-3 alert-info">
+            2nd row 3rd col
+          </div>
+        </div>
+        <div id="thirdrow" class="row">
+          <div id="trfc" class="col-md-3 alert-warning">
+            3rd row 1st col
+          </div>
+          <div id="trsc" class="col-md-3 alert-info">
+            3rd row 2nd col
+          </div>
+          <div id="trtc" class="col-md-3 alert-success">
+            3rd row 3rd col
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js" charset="utf-8"></script>
+</html>
